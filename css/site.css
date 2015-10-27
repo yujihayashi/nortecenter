@@ -1,0 +1,208 @@
+/*
+FUNÇÕES PADRÕES START
+*********************************************************************/
+.clear,
+.first {
+  clear: both;
+}
+/*********************************************************************
+FUNÇÕES PADRÕES END
+*/
+::selection {
+  background-color: #812d2a;
+  color: #FFF;
+}
+::-moz-selection {
+  background-color: #812d2a;
+  color: #FFF;
+}
+small {
+  display: inline-block;
+  line-height: 1.1;
+}
+textarea {
+  resize: vertical;
+}
+a,
+button {
+  transition: all 0.25s ease 0s;
+}
+/*
+FONTS START
+**********************************************************************************************/
+.btn {
+  font-family: 'robotoblack', Arial, sans-serif;
+  font-weight: normal;
+}
+/**********************************************************************************************
+FONTS END
+*/
+/*
+ESTRUTURA START
+**********************************************************************************************/
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+/**********************************************************************************************
+ESTRUTURA END
+*/
+/*
+CLASSES START
+**********************************************************************************************/
+[class^='lista-'],
+[class^='lista-'],
+[class^='menu-'],
+[class^='menu-'] ul,
+.cycle-slideshow {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.btn-gray {
+  background: #EEE;
+  color: #C93F2A;
+}
+.btn-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.box-share,
+.box-share > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box-share .fb_iframe_widget span {
+  vertical-align: top !important;
+}
+.cycle-slideshow li * {
+  white-space: normal;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+}
+.cycle-galeria {
+  margin: 0 0 30px;
+}
+.cycle-galeria,
+.cycle-galeria .cycle-slideshow,
+.cycle-galeria .cycle-slideshow li,
+.cycle-galeria .link {
+  width: 100%;
+  height: 460px;
+}
+.cycle-galeria .link {
+  display: block;
+  background: #000;
+  background-size: cover;
+  text-align: center;
+}
+.cycle-galeria .imagem {
+  display: inline-block;
+  max-height: 440px;
+}
+.cycle-galeria .cycle-nav {
+  text-align: center;
+}
+.cycle-galeria .cycle-nav span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  text-indent: -1000px;
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #AEAEAE;
+}
+.cycle-galeria .cycle-nav span + span {
+  margin-left: 10px;
+}
+.cycle-galeria .cycle-nav span.cycle-pager-active {
+  background: #812d2a;
+}
+.form-control {
+  box-shadow: none;
+}
+.imagem {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+.imagem-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.inline-block {
+  display: inline-block;
+}
+[class^='ycon-'],
+[class*='ycon-'] {
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url(../imagem/site/ycon.png);
+}
+.pixel {
+  width: 100%;
+  height: 100%;
+}
+.space {
+  width: 1%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.relative {
+  position: relative;
+}
+.social-footer,
+.social-central,
+.social-header {
+  font-size: 24px;
+}
+.social-footer a,
+.social-central a,
+.social-header a {
+  display: inline-block;
+}
+.social-footer a + a,
+.social-central a + a,
+.social-header a + a {
+  margin-left: 15px;
+}
+.text-format {
+  line-height: 1.8;
+}
+.text-format img[style*='float:right'] {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.text-format img[style*='float:left'] {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/**********************************************************************************************
+CLASSES END
+*/
+/*
+JQUERY UI START
+**********************************************************************************************/
+/**********************************************************************************************
+JQUERY UI END
+*/
+@media (max-width: 767px) {
+  /*    .site-geral:before {content:"TABLET";}*/
+}
+@media (max-width: 480px) {
+  /*#GERAL:before {content:"MOBILE";}*/
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'BebasNeueThin';
+    src: url('BebasNeueThin.eot');
+    src: url('BebasNeueThin.eot') format('embedded-opentype'),
+         url('BebasNeueThin.woff2') format('woff2'),
+         url('BebasNeueThin.woff') format('woff'),
+         url('BebasNeueThin.ttf') format('truetype'),
+         url('BebasNeueThin.svg#BebasNeueThin') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeueRegular.eot');
+    src: url('BebasNeueRegular.eot') format('embedded-opentype'),
+         url('BebasNeueRegular.woff2') format('woff2'),
+         url('BebasNeueRegular.woff') format('woff'),
+         url('BebasNeueRegular.ttf') format('truetype'),
+         url('BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueLight';
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot') format('embedded-opentype'),
+         url('BebasNeueLight.woff2') format('woff2'),
+         url('BebasNeueLight.woff') format('woff'),
+         url('BebasNeueLight.ttf') format('truetype'),
+         url('BebasNeueLight.svg#BebasNeueLight') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('BebasNeueBook.eot');
+    src: url('BebasNeueBook.eot') format('embedded-opentype'),
+         url('BebasNeueBook.woff2') format('woff2'),
+         url('BebasNeueBook.woff') format('woff'),
+         url('BebasNeueBook.ttf') format('truetype'),
+         url('BebasNeueBook.svg#BebasNeueBook') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('BebasNeueBold.eot');
+    src: url('BebasNeueBold.eot') format('embedded-opentype'),
+         url('BebasNeueBold.woff2') format('woff2'),
+         url('BebasNeueBold.woff') format('woff'),
+         url('BebasNeueBold.ttf') format('truetype'),
+         url('BebasNeueBold.svg#BebasNeueBold') format('svg');
+}

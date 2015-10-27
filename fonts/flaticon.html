@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px;
+        color:#333;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .image p {
+		font-size: 12px;
+		margin: 0px;
+		clear: none;
+		width: 300px;
+		line-height: 40px;
+	}
+    .text {
+        float: left;
+        font-size:14px;
+        margin-top: 15px;
+    }
+    .text ul {
+        margin-left:0px;
+        color:#111;
+        margin-bottom:20px;
+    }
+    .text .ex {
+        font-size:12px;
+        color:#666;
+        margin-left:35px;
+        display:block;
+    }
+    .text ul li {
+        margin-top:10px;
+        list-style:none;
+    }
+    .num {
+        background:#66A523;
+        color:#fff;
+        border-radius:20px;
+        padding:1px;
+        display:inline-block;
+        width:22px;
+        height:22px;
+        text-align:center;
+        margin-right: 5px;
+    }
+    .text ul strong {
+        font-weight:normal;
+        color:#000;
+    }
+    .image {
+        width: 280px;
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 30px;
+    }
+    #glyphs {
+        clear: both;
+    }
+    .image p:nth-child(even) i {
+        clear: none;
+    }
+    .glyph {
+        display: inline-block;
+        width: 120px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #666;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 12px;
+    }
+    .author-name {
+		font-size: 10px;
+	}
+	a{
+		color: #66A523;
+	}
+    .instructions {
+        font-style:italic;
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .iconsuse {
+        font-size:22px;
+        font-style:italic;
+        padding-top:20px;
+        margin-top:20px;
+        border-top:1px solid #bbb;
+    }
+    .usetitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#66A523;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1.logo {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-top: -16px;
+        text-transform: lowercase;
+        border-bottom:1px solid #bbb;
+    }
+    h1.logo strong {
+        font-size: 16px;
+        font-family:sans-serif;
+        font-weight:normal;
+        color:#333;
+    }
+    h1.logo a {
+        color:#34302d;
+        text-decoration: none;
+    }
+    h1.logo a span {
+        color:#66A523;
+    }
+    #footer {
+        padding-top:40px;
+        clear:both;
+        text-align:center;
+    }
+    #footer a {
+        color:#66A523;
+    }
+    textarea {
+		margin: 0px;
+		width: 800px;
+		height: 150px;
+		border: 1px solid #CCC;
+		resize: none;
+		background: #EEE;
+    }
+    .author-link, .attrDiv a{
+    	font-size: 12px;
+    	color: #333;
+    	text-decoration: none;
+    }
+    .external {
+    	display: block;
+    }
+    .attrDiv {
+		font-size: 12px;
+	}
+    .attribution {
+        border-top: 1px solid #AAA;
+        margin: 10px 0;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="http://www.flaticon.com">
+                <span>FLAT</span>ICON</a>
+            <strong>Font Demo</strong>
+        </h1>
+    </header>
+
+    <section class="demo">
+        <div class="text">
+
+            <div class="instructions">Instructions:</div>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+                </li>
+                <li>
+                    <p>
+                        <span class="num">2</span>Add the CSS link to your website source code on header.
+                        <br />
+                        <span class="ex">&lt;head&gt;
+                            <br/>...
+                            <br/>&lt;link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"&gt;
+                            <br/>...
+                            <br/>&lt;/head&gt;</span>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="num">3</span>Use the icon class on "display:inline" elements:
+                        <br />
+                        <span class="ex">Use example: &lt;i class=&quot;flaticon-airplane49&quot;&gt;&lt;/i&gt; or &lt;span class=&quot;flaticon-airplane49&quot;&gt;&lt;/span&gt;</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="glyphs"><div class="glyph">
+		<div class="glyph-icon flaticon-add31"></div>
+		<div class="class-name">.flaticon-add31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plus-addition-sign-circle_70526">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-airplane116"></div>
+		<div class="class-name">.flaticon-airplane116</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flying-airplane_70504">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-announcer1"></div>
+		<div class="class-name">.flaticon-announcer1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/loudspeaker-announce_70462">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-attach16"></div>
+		<div class="class-name">.flaticon-attach16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/school-paper-clip_70484">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-backward5"></div>
+		<div class="class-name">.flaticon-backward5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/backward-arrow_70449">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-badge12"></div>
+		<div class="class-name">.flaticon-badge12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/retro-badge_70434">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bell76"></div>
+		<div class="class-name">.flaticon-bell76</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/alarm-bell_70356">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-book270"></div>
+		<div class="class-name">.flaticon-book270</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/reading-open-book_70524">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bookmark54"></div>
+		<div class="class-name">.flaticon-bookmark54</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/library-bookmark_70507">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-building106"></div>
+		<div class="class-name">.flaticon-building106</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/building-house_70465">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-calendar194"></div>
+		<div class="class-name">.flaticon-calendar194</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/office-monthly-calendar_70528">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cancel29"></div>
+		<div class="class-name">.flaticon-cancel29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cancel-button_70414">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-check74"></div>
+		<div class="class-name">.flaticon-check74</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/checking-mark-circle_70476">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chevron1"></div>
+		<div class="class-name">.flaticon-chevron1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/up-chevron_70481">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chevron2"></div>
+		<div class="class-name">.flaticon-chevron2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/down-chevron_70521">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chevron3"></div>
+		<div class="class-name">.flaticon-chevron3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/right-chevron_70522">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chevron"></div>
+		<div class="class-name">.flaticon-chevron</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/left-chevron_70406">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-clock169"></div>
+		<div class="class-name">.flaticon-clock169</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/circular-wall-clock_70446">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud18"></div>
+		<div class="class-name">.flaticon-cloud18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-upload-arrow_70354">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud367"></div>
+		<div class="class-name">.flaticon-cloud367</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-data-storage_70416">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-copy1"></div>
+		<div class="class-name">.flaticon-copy1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/copy-file_70527">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cut38"></div>
+		<div class="class-name">.flaticon-cut38</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hairdresser-cutting-scissors_70480">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-diskette17"></div>
+		<div class="class-name">.flaticon-diskette17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/floppy-disk-save-file_70415">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dislike18"></div>
+		<div class="class-name">.flaticon-dislike18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thumb-down_70489">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-down arrow24"></div>
+		<div class="class-name">.flaticon-down arrow24</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/directional-down-arrow_70475">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-download194"></div>
+		<div class="class-name">.flaticon-download194</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/download-tray_70516">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-expand10"></div>
+		<div class="class-name">.flaticon-expand10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/expand-arrows_70368">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-export"></div>
+		<div class="class-name">.flaticon-export</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/export-file_70447">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-eye130"></div>
+		<div class="class-name">.flaticon-eye130</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/eye-view_70424">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-facebook7"></div>
+		<div class="class-name">.flaticon-facebook7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/facebook-social-network-logo_70452">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-file128"></div>
+		<div class="class-name">.flaticon-file128</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/text-line-form_70366">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-file129"></div>
+		<div class="class-name">.flaticon-file129</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/blank-paper-sheet_70383">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-filter"></div>
+		<div class="class-name">.flaticon-filter</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chemistry-filter_70413">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-font14"></div>
+		<div class="class-name">.flaticon-font14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/text-file-font_70456">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-forbidden17"></div>
+		<div class="class-name">.flaticon-forbidden17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/prohibition-road-sign_70442">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-forward27"></div>
+		<div class="class-name">.flaticon-forward27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/forward-arrow_70437">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-gear40"></div>
+		<div class="class-name">.flaticon-gear40</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/options-gear_70483">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-google4"></div>
+		<div class="class-name">.flaticon-google4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/google-plus-social-network-logo_70454">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-grid2"></div>
+		<div class="class-name">.flaticon-grid2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/menu-grid_70511">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-headphones46"></div>
+		<div class="class-name">.flaticon-headphones46</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/audio-headphones_70371">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-heart373"></div>
+		<div class="class-name">.flaticon-heart373</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/lovers-heart_70453">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-house204"></div>
+		<div class="class-name">.flaticon-house204</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/web-page-home_70370">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-information83"></div>
+		<div class="class-name">.flaticon-information83</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/information-square_70395">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-laptop4"></div>
+		<div class="class-name">.flaticon-laptop4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/open-computer-laptop-screen_70375">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-left arrow25"></div>
+		<div class="class-name">.flaticon-left arrow25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/left-arrow-sign_70444">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-like83"></div>
+		<div class="class-name">.flaticon-like83</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thumb-up-gesture_70435">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-lines7"></div>
+		<div class="class-name">.flaticon-lines7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/menu-options_70443">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-list100"></div>
+		<div class="class-name">.flaticon-list100</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/multimedia-menu_70531">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-lock8"></div>
+		<div class="class-name">.flaticon-lock8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/blocked-padlock_70497">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-magnifying glass33"></div>
+		<div class="class-name">.flaticon-magnifying glass33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/magnifying-glass-zoom-out_70398">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-magnifying glass34"></div>
+		<div class="class-name">.flaticon-magnifying glass34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/magnifying-glass-browser_70490">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-magnifying glass35"></div>
+		<div class="class-name">.flaticon-magnifying glass35</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/magnifying-glass-zoom-in_70518">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-mail2"></div>
+		<div class="class-name">.flaticon-mail2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/closed-envelope-email_70523">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-microphone10"></div>
+		<div class="class-name">.flaticon-microphone10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/voice-recording_70428">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-minimize1"></div>
+		<div class="class-name">.flaticon-minimize1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/minimize-arrows_70515">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-minus6"></div>
+		<div class="class-name">.flaticon-minus6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/minus-maths-button_70506">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-move1"></div>
+		<div class="class-name">.flaticon-move1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/move-arrows_70461">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-news"></div>
+		<div class="class-name">.flaticon-news</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/folded-newspaper_70384">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-notepad20"></div>
+		<div class="class-name">.flaticon-notepad20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/writing-notepad_70468">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-padlock86"></div>
+		<div class="class-name">.flaticon-padlock86</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/open-padlock_70380">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pause51"></div>
+		<div class="class-name">.flaticon-pause51</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/video-player-pause-button_70396">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pencil8"></div>
+		<div class="class-name">.flaticon-pencil8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/edit-document_70390">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pencil9"></div>
+		<div class="class-name">.flaticon-pencil9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/edit-pencil_70513">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-phone14"></div>
+		<div class="class-name">.flaticon-phone14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/telephone-call-receiver_70496">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-photo camera5"></div>
+		<div class="class-name">.flaticon-photo camera5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/photo-camera_70427">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-picture54"></div>
+		<div class="class-name">.flaticon-picture54</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/photography-frame_70509">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pin12"></div>
+		<div class="class-name">.flaticon-pin12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/map-point-pointer_70364">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-play127"></div>
+		<div class="class-name">.flaticon-play127</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/multimedia-music-player-play-button_70381">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pointer31"></div>
+		<div class="class-name">.flaticon-pointer31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/computer-mouse-cursor_70358">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-power115"></div>
+		<div class="class-name">.flaticon-power115</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/power-on-buton_70492">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-print"></div>
+		<div class="class-name">.flaticon-print</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/office-paper-printer_70365">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-question5"></div>
+		<div class="class-name">.flaticon-question5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/help-button_70458">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-refresh8"></div>
+		<div class="class-name">.flaticon-refresh8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/refresh-page-arrow_70501">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-right arrow30"></div>
+		<div class="class-name">.flaticon-right arrow30</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/right-direction_70353">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sad70"></div>
+		<div class="class-name">.flaticon-sad70</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sad-smiley_70445">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sales2"></div>
+		<div class="class-name">.flaticon-sales2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sales-ticket_70425">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-screen88"></div>
+		<div class="class-name">.flaticon-screen88</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/television-screen_70379">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-share53"></div>
+		<div class="class-name">.flaticon-share53</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/share-arrow_70440">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-share55"></div>
+		<div class="class-name">.flaticon-share55</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sharing-files_70500">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-shopping cart13"></div>
+		<div class="class-name">.flaticon-shopping cart13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/online-shopping-cart_70369">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-smartphone65"></div>
+		<div class="class-name">.flaticon-smartphone65</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cellphone-backside_70359">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-smiley3"></div>
+		<div class="class-name">.flaticon-smiley3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/smiling-face_70400">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sort2"></div>
+		<div class="class-name">.flaticon-sort2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sort_70382">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-speech balloon2"></div>
+		<div class="class-name">.flaticon-speech balloon2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chat-speech-balloon_70488">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-speech bubble34"></div>
+		<div class="class-name">.flaticon-speech bubble34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dialogue-balloon_70394">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-star6"></div>
+		<div class="class-name">.flaticon-star6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/star-shape-favorite_70448">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-star7"></div>
+		<div class="class-name">.flaticon-star7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/star-favorite_70457">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-support1"></div>
+		<div class="class-name">.flaticon-support1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/livesaver-support_70357">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tablet4"></div>
+		<div class="class-name">.flaticon-tablet4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tablet-backside_70374">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tags"></div>
+		<div class="class-name">.flaticon-tags</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/shopping-store-tags_70426">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-trash1"></div>
+		<div class="class-name">.flaticon-trash1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/waste-can_70363">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-treasure"></div>
+		<div class="class-name">.flaticon-treasure</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pirate-treasure-map_70431">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-truck72"></div>
+		<div class="class-name">.flaticon-truck72</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/delivery-truck_70397">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-twitter4"></div>
+		<div class="class-name">.flaticon-twitter4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/twitter-bird-logo_70520">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-up arrow46"></div>
+		<div class="class-name">.flaticon-up arrow46</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/up-arrow-sign_70495">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-upload142"></div>
+		<div class="class-name">.flaticon-upload142</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/uploading-file_70360">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-user189"></div>
+		<div class="class-name">.flaticon-user189</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/messenger-user-avatar_70529">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-warning5"></div>
+		<div class="class-name">.flaticon-warning5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/danger-sign_70405">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-white flag1"></div>
+		<div class="class-name">.flaticon-white flag1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/map-location-flag_70387">Anton Saputro</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wifi110"></div>
+		<div class="class-name">.flaticon-wifi110</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wireless-internet-connectivity_70482">Anton Saputro</a></div></div></section>
+
+<section class="attribution">
+
+	<div class="usetitle">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+ under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. The authors are: <a href="http://www.antonps.com">Anton Saputro</a>.</div><div class="usetitle">Copy the Attribution License:</div>
+
+<textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;
+ under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY&lt;/a&gt;. The authors are: &lt;a href=&quot;http://www.antonps.com&quot;&gt;Anton Saputro&lt;/a&gt;.</textarea>
+
+</section>
+
+<section class="iconsuse">
+    	<div class="usetitle">Examples:</div>
+		<div class="image"><p>&lt;i class=&quot;flaticon-add31&quot;&gt;&lt;/i&gt; <i class="flaticon-add31"></i></p><p>&lt;i class=&quot;flaticon-airplane116&quot;&gt;&lt;/i&gt; <i class="flaticon-airplane116"></i></p><p>&lt;i class=&quot;flaticon-announcer1&quot;&gt;&lt;/i&gt; <i class="flaticon-announcer1"></i></p><p>&lt;i class=&quot;flaticon-attach16&quot;&gt;&lt;/i&gt; <i class="flaticon-attach16"></i></p><p>&lt;i class=&quot;flaticon-backward5&quot;&gt;&lt;/i&gt; <i class="flaticon-backward5"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-badge12&quot;&gt;&lt;/span&gt; <span class="flaticon-badge12"></span></p><p>&lt;span class=&quot;flaticon-bell76&quot;&gt;&lt;/span&gt; <span class="flaticon-bell76"></span></p><p>&lt;span class=&quot;flaticon-book270&quot;&gt;&lt;/span&gt; <span class="flaticon-book270"></span></p><p>&lt;span class=&quot;flaticon-bookmark54&quot;&gt;&lt;/span&gt; <span class="flaticon-bookmark54"></span></p><p>&lt;span class=&quot;flaticon-building106&quot;&gt;&lt;/span&gt; <span class="flaticon-building106"></span></p></div><div class="image"><p>&lt;span class=&quot;flaticon-calendar194&quot;&gt;&lt;/span&gt; <span class="flaticon-calendar194"></span></p><p>&lt;i class=&quot;flaticon-cancel29&quot;&gt;&lt;/i&gt; <i class="flaticon-cancel29"></i></p><p>&lt;i class=&quot;flaticon-check74&quot;&gt;&lt;/i&gt; <i class="flaticon-check74"></i></p><p>&lt;i class=&quot;flaticon-chevron1&quot;&gt;&lt;/i&gt; <i class="flaticon-chevron1"></i></p><p>&lt;i class=&quot;flaticon-chevron2&quot;&gt;&lt;/i&gt; <i class="flaticon-chevron2"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-chevron3&quot;&gt;&lt;/span&gt; <span class="flaticon-chevron3"></span></p><p>&lt;span class=&quot;flaticon-chevron&quot;&gt;&lt;/span&gt; <span class="flaticon-chevron"></span></p><p>&lt;span class=&quot;flaticon-clock169&quot;&gt;&lt;/span&gt; <span class="flaticon-clock169"></span></p><p>&lt;span class=&quot;flaticon-cloud18&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud18"></span></p><p>&lt;span class=&quot;flaticon-cloud367&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud367"></span></p></div><div class="image"></div>
+</section>
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+	</body>
+</html>

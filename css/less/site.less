@@ -1,5 +1,5 @@
-@primary-color: #812d2a; 
-@secondary-color: #089bdf;  
+@primary-color: #2c8a5a; 
+@secondary-color: #d2421d;  
 @third-color: #b6967e;  
 /*
 FUNÇÕES PADRÕES START
@@ -31,7 +31,9 @@ a, button  {transition: all 0.25s ease 0s;}
 /*
 FONTS START
 **********************************************************************************************/
-.btn {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+.site-header .navbar-inverse {font-family: 'BebasNeueBold', Arial, sans-serif;font-weight: normal;}
+.site-header .navbar-default {font-family: 'source_sans_problack', Arial, sans-serif;font-weight: normal;}
+.preco-parcela, .preco-final, .title {font-family: 'source_sans_probold', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
@@ -40,13 +42,58 @@ ESTRUTURA START
 **********************************************************************************************/
 .extra-header {
 	.site-header {}
-	.navbar {border:0;margin:0;.border-radius(0);}
+	.navbar {border:0;margin:0;.border-radius(0);text-transform: uppercase;}
+    .navbar-default {background: none;}
+    .navbar-text {margin:0;padding:16px 15px;}
+    .header-line-1 {
+        .nav {
+            font-size: 15px;margin-left:0;margin-right: 0;
+            > li {
+                a {padding:14px 15px;}
+                + li {border-left: 1px solid rgba(0, 0, 0, .1);}
+            }
+            .icone {color: #c9787d;margin-right: 5px;}
+        }
+    }
+    .navbar-brand {height: auto;}
+    .navbar-inverse {
+        .border-radius(10px);font-size: 20px;
+        .nav {
+            > li {
+                a {
+                    &:hover {text-decoration: underline;}
+                }
+                + li {border-left: 1px solid #287c51;}
+            }
+        }
+        .navbar-toggle {
+            border-color: darken(@primary-color, 15%);
+            &:hover, &:focus {background-color: darken(@primary-color, 15%);}
+        }
+        .navbar-collapse, .navbar-form {border-color: transparent;}
+    }
+    .navbar-form {
+        background: #FFF;.border-radius(10px 10px 10px 0);margin:0;padding:6px 5px 9px 20px;float:none;
+        .form-control {background: none;border:0;.border-radius(0);border-bottom:1px solid #dbdbdb;padding-left:0;padding-right:0;font-size: 18px;font-weight: normal;width: 100%;}
+        .form-control, .input-group-addon, .input-group-btn {display: table-cell;float:none;}
+        .btn {
+            background: none;font-size: 18px;color: @primary-color;padding-bottom: 2px;
+            &:hover {background: none;}
+        }
+        .input-group-btn {width: 1%;}
+        .input-group {display: table;}
+    }
 }
 .extra-central {
 	.site-central {}
 }
 .extra-footer {
 	.site-footer {}
+}
+
+.home {
+    .extra-header {position: absolute;left: 0;right: 0;top: 0;}
+    .extra-central {}
 }
 /**********************************************************************************************
 ESTRUTURA END
@@ -60,6 +107,15 @@ CLASSES START
 .box-share {
     &, > div {display: inline-block;vertical-align: middle;}
     .fb_iframe_widget span {vertical-align: top !important;}
+}
+.box-banner {
+    background: url(../imagem/site/bg-banner.jpg) no-repeat center bottom;padding:180px 0 0;
+    .extra-1 {background: url(../imagem/site/bg-banner-extra.png) repeat-x bottom;}
+
+} 
+.cycle-banner {
+    background: #FFF;.border-radius(10px 10px 0 0);border-bottom:3px solid #c2c2c2;
+    .title {font-size: 24px;}
 }
 .cycle-slideshow {
     li {
@@ -93,7 +149,17 @@ CLASSES START
 
 
 .pixel {width: 100%;height: 100%;}
+.preco {
+    margin:15px 0;line-height: 1;
+    .preco-left, .preco-right {display: inline-block;}
+    .preco-left {padding-right: 15px;}
+    .preco-right {border-left:1px solid #ccc;padding-left: 15px;}
+}
+.preco-parcela {display: block;}
+.preco-inicial {display: block;}
+.preco-final {display: block;}
 
+.risco {display: inline-block;text-decoration: line-through;}
 .space {width:1%;display:inline-block;height:100%;vertical-align:middle;}
 .relative {position: relative;}
 
@@ -123,14 +189,26 @@ JQUERY UI END
 
 }
 @media (max-width: 767px) {
- /*    .site-geral:before {content:"TABLET";}*/
+    .home {
+        .extra-header {position: relative;}
+        .box-banner {padding:0;}
+    }
+    .extra-header {
+        .header-line-1 {
+            .nav {
+                > li {
+                    + li {border-left: 0;}
+                }
+            }
+        }
+    }
 }
 @media (max-width: 480px) {
- /*#GERAL:before {content:"MOBILE";}*/
+
 }
 @media (min-width: 768px) and (max-width: 980px) {
 
 }
 @media (min-width: 981px) and (max-width: 1200px) {
- /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+
 }
